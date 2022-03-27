@@ -14,11 +14,11 @@
 ### Module
 
 nodemon - 프로젝트를 살펴보고 변경 사항이 있을 시 서버를 재시작해주는 프로그램
-
 Babel - 코드를 일반 Node.js 코드로 컴파일
-express
+express - Framework
 pug - view engine
-MVP CSS
+MVP CSS - Temporary CSS
+ws - Node.js WebSocket library
 
 server.js : back-end
 app.js : front-end
