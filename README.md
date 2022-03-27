@@ -1,8 +1,12 @@
-## WebRTC and WebSockets Project
+# WebRTC and WebSockets Project
 
-### 프로젝트 개요
+```javascript
+npm run dev
+```
 
-- WebRTC와 WebSockets의 사용성을 익히고자 프로젝트를 진행하였습니다.
+## 프로젝트 개요
+
+- WebRTC와 WebSockets의 **real-time** 사용성을 익히고자 프로젝트를 진행하였습니다.
 
 ### 프로젝트 기술
 
@@ -13,17 +17,19 @@
 
 ### Module
 
-nodemon - 프로젝트를 살펴보고 변경 사항이 있을 시 서버를 재시작해주는 프로그램
-Babel - 코드를 일반 Node.js 코드로 컴파일
-express - Framework
-pug - view engine
-MVP CSS - Temporary CSS
-ws - Node.js WebSocket library
+- nodemon - 프로젝트를 살펴보고 변경 사항이 있을 시 서버를 재시작해주는 프로그램
+- Babel - 코드를 일반 Node.js 코드로 컴파일
+- express - Framework
+- pug - view engine
+- MVP CSS - Temporary CSS
+- ws - Node.js WebSocket library
+
+### File
 
 server.js : back-end
 app.js : front-end
 
-## real-time
+### real-time
 
 webSocket을 이용해 실시간 chat, notification 등의 **real-time**을 만들어낼 수 있습니다.
 
