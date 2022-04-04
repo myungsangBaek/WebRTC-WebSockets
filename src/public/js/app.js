@@ -1,4 +1,4 @@
-const ul = document.querySelector("ul");
+const messageList = document.querySelector("ul");
 const messageForm = document.querySelector("form");
 
 //서버로의 연결
@@ -10,6 +10,9 @@ socket.addEventListener("open", () => {
 
 socket.addEventListener("message", (message) => {
   console.log("New message: ", message.data);
+  const li = document.createElement("li");
+  li.innerText = message.data;
+  messageList.append(li);
 });
 
 socket.addEventListener("close", () => {
