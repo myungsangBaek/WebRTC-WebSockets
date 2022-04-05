@@ -49,6 +49,6 @@ WebSocket은 http와 전혀 다른 프로토콜로 connection(연결)이 일어�
 
 **bi-directional(양방향의)** 연결이기 때문입니다. 한 번 연결되면 서로에게 메세지를 자유롭게 보낼 수 있습니다.
 
-WebSocket이 Javascript전용은 아니지만 자바스크립트에서도 사용할 수 있습니다. 브라우저에는 내장된 **webSocket API** 가 있습니다.
+**WebSocket**은 자바스크립트에서도 사용할 수 있지만 Javascript전용은 아닙니다. 브라우저에는 내장된 **webSocket API** 가 있습니다.
 
 webSocket은 protocol이기에 어떤 프로그래밍 언어에 국한되어 있지 않습니다. 또한, 브라우저와 백엔드 사이에서만 동작하는게 아니라 백엔드와 백엔드 사이에서도 동작합니다.
