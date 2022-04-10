@@ -1,5 +1,20 @@
 const socket = io();
 
+const welcome = document.getElementById("welcome");
+const form = welcome.querySelector("form");
+
+function handleRoomSubmit(event) {
+  event.preventDefault();
+  const input = form.querySelector("input");
+  //emit 모든 이벤트와 Js Object 전송이 가능하다.callback 사용 가능
+  socket.emit("enter_room", { payload: input.value }, () => {
+    console.log("server is done!");
+  });
+  input.value = "";
+}
+
+form.addEventListener("submit", handleRoomSubmit);
+
 //webSocket
 // const messageList = document.querySelector("ul");
 // const nickForm = document.querySelector("#nick");
