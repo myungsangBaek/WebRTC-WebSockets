@@ -16,6 +16,7 @@ npm run dev
 2. Javascript
 3. WebRTC
 4. WebSockets
+5. SocketIO
 
 ### Module
 
@@ -52,3 +53,17 @@ WebSocket은 http와 전혀 다른 프로토콜로 connection(연결)이 일어�
 **WebSocket**은 자바스크립트에서도 사용할 수 있지만 Javascript전용은 아닙니다. 브라우저에는 내장된 **webSocket API** 가 있습니다.
 
 webSocket은 protocol이기에 어떤 프로그래밍 언어에 국한되어 있지 않습니다. 또한, 브라우저와 백엔드 사이에서만 동작하는게 아니라 백엔드와 백엔드 사이에서도 동작합니다.
+
+### Socket IO vs WebSockets
+
+Socket IO는 프론트와 백엔드 간 실시간 통신을 가능하게 해주는 프레임워크 또는 라이브러리로 강력한 Chat Framework로 실시간, 양방향, event 기반의 통신을 가능하게 해줍니다.
+
+Socket IO는 websocket을 실행하는것이 아니라 프레임워크로 websocket보다 훨씬 탄력성이 뛰어납니다.
+
+websocket은 Socket IO가 실시간, 양방향, event기반 통신을 제공하는 방법 중 하나입니다.
+
+만약 브라우저나 모바일에서 websocket을 지원하지않아도 socket IO는 다른 방법을 이용해서 계속 작동을 합니다.
+
+즉, socket IO는 'websocket'의 부가기능이 아닙니다. 오히려 socket IO가 'websocket'을 방법 중 하나로 사용합니다.
+
+firewall, proxy가 있어도 socket IO는 계속 작동합니다.
