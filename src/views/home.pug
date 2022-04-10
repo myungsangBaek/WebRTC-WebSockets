@@ -4,17 +4,34 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Web RTC, Web SocketIO
-        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+        title Document
     body 
-        header 
-            h1 Web RTC, Web SocketIO
-        main
-            form#nick
-                input(type="text", placeholder="choose a nickname", required)
-                button Save
-            ul
-            form#message
-                input(type="text", placeholder="write a msg", required)
-                button Send
+        header
+            h1 Zoom 
+        main 
+
+        script(src="/socket.io/socket.io.js") 
         script(src="/public/js/app.js")
+
+
+//- webSocket
+//- doctype html
+//- html(lang="en")
+//-     head
+//-         meta(charset="UTF-8")
+//-         meta(http-equiv="X-UA-Compatible", content="IE=edge")
+//-         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-         title Web RTC, Web SocketIO
+//-         <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+//-     body 
+//-         header 
+//-             h1 Web RTC, Web SocketIO
+//-         main
+//-             form#nick
+//-                 input(type="text", placeholder="choose a nickname", required)
+//-                 button Save
+//-             ul
+//-             form#message
+//-                 input(type="text", placeholder="write a msg", required)
+//-                 button Send
+//-         script(src="/public/js/app.js")
