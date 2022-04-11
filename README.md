@@ -64,9 +64,9 @@ websocket은 Socket IO가 실시간, 양방향, event기반 통신을 제공하�
 
 만약 브라우저나 모바일에서 websocket을 지원하지않아도 socket IO는 다른 방법을 이용해서 계속 작동을 합니다.
 
-즉, socket IO는 'websocket'의 부가기능이 아닙니다. 오히려 socket IO가 'websocket'을 방법 중 하나로 사용합니다.
+즉, socket IO는 **websocket**의 부가기능이 아닙니다. 오히려 socket IO가 **websocket**을 방법 중 하나로 사용합니다.
 
-firewall, proxy가 있어도 socket IO는 계속 작동합니다.
+**firewall**, **proxy**가 있어도 socket IO는 계속 작동합니다.
 
 ```
 localhost:3000/socket.io/socket.io.js
