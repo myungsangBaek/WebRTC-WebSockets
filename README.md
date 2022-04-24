@@ -71,3 +71,14 @@ firewall, proxy가 있어도 socket IO는 계속 작동합니다.
 ```
 localhost:3000/socket.io/socket.io.js
 ```
+
+### Socket IO
+
+Socket Io는 기본적으로 room을 제공합니다. 또한 id를 가지고 있습니다.
+`socket.join` 명령어로 방에 들어갈 수 있습니다.
+`socket.leave` 명령어로 방을 나갈 수 있습니다.
+`socket.onAny` 미들웨어로 이벤트를 감지할 수 있습니다.
+
+### Ref
+
+https://socket.io/
