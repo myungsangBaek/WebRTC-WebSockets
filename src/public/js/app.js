@@ -8,11 +8,23 @@ room.hidden = true;
 
 let roomName = "";
 
+function handleMessageSubmit(event) {
+  event.preventDefault();
+  const input = room.querySelector("input");
+  const value = input.value;
+  socket.emit("new_message", input.value, roomName, () => {
+    addMessage(`You: ${value}`);
+  });
+  input.value = "";
+}
+
 function addMessage(message) {
   const ul = room.querySelector("ul");
   const li = document.createElement("li");
   li.innerText = message;
   ul.appendChild(li);
+  const form = room.querySelector("form");
+  form.addEventListener("submit", handleMessageSubmit);
 }
 
 function showRoom() {
@@ -36,6 +48,12 @@ form.addEventListener("submit", handleRoomSubmit);
 socket.on("welcome", () => {
   addMessage("someone joined!");
 });
+
+socket.on("bye", () => {
+  addMessage("someone left :(");
+});
+
+socket.on("new_message", addMessage);
 //webSocket
 // const messageList = document.querySelector("ul");
 // const nickForm = document.querySelector("#nick");
